@@ -23,6 +23,18 @@ public: Box(double width, double heigth, double depth)
 	this->heigth = heigth;
 	this->depth = depth;
 }
+double GetWidth()
+{
+	return width;
+}
+double GetHeigth() 
+{
+	return heigth;
+}
+double GetDepth() 
+{
+	return depth;
+}
 public: double GetSurface()//表面積
 {
 	return width * heigth * depth;
@@ -42,6 +54,14 @@ public: Cylinder(double bottom, double heigth)
 {
 	this->bottom = bottom;
 	this->heigth = heigth;
+}
+double GetBottom() 
+{
+	return bottom;
+}
+double GetHeigth() 
+{
+	return heigth;
 }
 public: double GetSurface()//表面積
 {
@@ -63,6 +83,14 @@ public: Cone(double bottom, double heigth)
 	this->bottom = bottom;
 	this->heigth = heigth;
 }
+double GetBottom()
+{
+	return bottom;
+}
+double GetHeigth()
+{
+	return heigth;
+}
 public: double GetSurface()//表面積
 {
 	return M_PI * bottom * (sqrt(bottom * bottom + heigth * heigth) + bottom);
@@ -80,6 +108,10 @@ private:
 public: Sphere(double bottom)
 {
 	this->bottom = bottom;
+}
+double GetBottom()
+{
+	return bottom;
 }
 public: double GetSurface()//表面積
 {
